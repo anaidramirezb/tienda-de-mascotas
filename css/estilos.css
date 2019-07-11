@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+/* --------------Variables */
+:root{
+  --green--color: #7ACC2D;
+  --white--color:white;
+  --black--color:#313337;
+  /* Espaciado */
+  --space:10px;
+  /* Tipografía */
+  --normal:12px;
+  /* Box Shadow */
+  --box: 0px 0 2px 1px #e6e5e9;
+}
+
+html, body{
+padding:var(--space);
+margin:0;
+font-size: var(--normal);
+font-family: 'Open Sans', sans-serif;
+
+}
+
+nav{
+  display: flex;
+  background-color: var(--green--color) ;
+  padding: var(--space);
+  color: var(--white--color);
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav li{
+  padding-left: 20px;
+  list-style: none;
+}
+
+nav li a{
+  color: var(--black--color);
+  text-decoration: none;
+}
+
+nav li a:hover{
+  color:var(--white--color);
+}
+footer{
+  background-color: var(--black--color);
+  display: flex;
+  justify-content: space-between;
+  color:var(--white--color);
+  padding: var(--space)
+}
+ /* AQUI EMPIEZA LA MAIN SECTION */
+.main_section{
+  padding: 20%;
+  text-align: center;
+}
+.products{
+  background-image: url("../image/curve.png");
+  background-size: cover;
+  background-position: center top;
+  padding: 20%;
+  display: flex;
+}
+.product {
+  padding:var(--space);
+  margin-top: -240px;
+}
+.product .content{
+  background-color: var(--white--color);
+  padding: var(--space);
+  box-shadow: var(--box);
+}
+.img_content{
+  text-align: center;
+}
+.main_button{
+  background-color:var(--green--color);
+  width:100%;
+  padding: var(--space);
+  font-size: var(--normal);
+  color:var(--white--color);
+  border:0;
+  cursor:pointer;
+  border-radius: 2px;
+}
+.main_button:hover{
+  background-color: #5e9e22;
+}
+/* Seccion de los features */
+.features{
+  background-position: center top;
+  padding: 20%;
+  display: flex;
+}
+.feature .content{
+  background-color: var(--white--color);
+  padding: var(--space);
+}
+.feature{
+  padding:var(--space);
+}
+
+
+/* Seccion de las menciones */
+.second_section{
+    text-align: center;
+}
+.menciones{
+  background-position: center top;
+  padding: 10%;
+  display: flex;
+}
+.mencion .content{
+  background-color: var(--white--color);
+  padding: 20px;
+  box-shadow: var(--box);
+}
+.mencion{
+  padding:var(--space);
+}
